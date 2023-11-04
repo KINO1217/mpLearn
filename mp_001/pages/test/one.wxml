@@ -1,0 +1,38 @@
+<!--pages/test/one.wxml-->
+<!--布局标签div-->
+<view class="container1">
+    <view>A</view>
+    <view>B</view>
+    <view>C</view>
+</view>
+<!-- 滚动组件 -->
+<scroll-view class="container2" scroll-y>
+    <view>A</view>
+    <view>B</view>
+    <view>C</view>
+</scroll-view>
+<!-- 轮播图组件 -->
+<swiper indicator-dots autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+        <view class="item">
+            <image src="https://api.r10086.com/%E6%A8%B1%E9%81%93%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3.php?%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%E7%B3%BB%E5%88%97=%E5%8E%9F%E7%A5%9E"></image>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="item">
+            <image src="https://tse3-mm.cn.bing.net/th/id/OIP-C.WVUDUw5Zvy9t3Q0LliB-0wHaKX?pid=ImgDet&rs=1"></image>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="item">
+            <image src="https://n.sinaimg.cn/sinakd10123/56/w690h966/20210418/8f90-knvsnuh3426644.jpg"></image>
+        </view>
+    </swiper-item>
+</swiper>
+<!-- 事件绑定 -->
+<block>
+    <button type="primary" bindtap="onTap" data-info="{{count}}">{{count}}</button>
+    <!-- 发送get请求 -->
+    <button type="primary" bindtap="onPOST">发送POST请求</button>
+    <button type="primary" bindtap="mOnenet">Onenet下发指令</button>
+</block>

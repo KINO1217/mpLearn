@@ -1,0 +1,55 @@
+/* pages/test/one.wxss */
+.container1 view{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.container1 view:nth-child(odd){
+    background-color: lightblue;
+}
+
+.container1{
+    display: flex;
+}
+
+.container2 view{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.container2 view:nth-child(even){
+    background-color: lightblue;
+}
+
+.container2{
+    border: 1px solid red;
+    width: 100px;
+    height: 60px;
+}
+
+swiper{
+    height:100px;
+}
+
+swiper .item{
+    height:100%;
+    line-height: 100px;
+    text-align: center;
+}
+
+swiper swiper-item:nth-child(even) .item{
+    background-color: #e0e0e0;
+}
+
+swiper swiper-item:nth-child(odd) .item{
+    background-color: #f0f0f0;
+}
+
+swiper .item image{
+    width:30%;
+    height:100%;
+} 

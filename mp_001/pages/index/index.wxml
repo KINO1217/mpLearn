@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<button type="primary" bindtap="onMyLearnView">跳转我的学习界面</button>
+<block>
+    <view wx:if="{{display===1}}">
+        显示内容
+    </view>
+    <view wx:elif="{{display===0}}">
+        不显示内容
+    </view>
+</block>
+
+<switch type="switch" color="#121715" bindchange="stateHandler"></switch>
+
+<view>{{temp}}</view>
